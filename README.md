@@ -1,50 +1,38 @@
-# Welcome to your Expo app 👋
+# Pointerx
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Hi! Welcome to **Pointerx**, my AI-powered Student Reviewer Assistant.
 
-## Get started
+Pointerx helps students study more efficiently by providing an AI chatbot and converting PDF documents into interactive learning materials, including:
 
-1. Install dependencies
+- AI-generated reviewers
+- Flashcards
+- Mock tests
+- AI study chatbot
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🎥 Demo
 
-   ```bash
-   npx expo start
-   ```
+https://github.com/user-attachments/assets/c17455f3-6c46-450b-a09b-6f311e4565ce
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📱 Screenshots
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/432c12c4-7172-4732-86ef-434695e3169f" alt="Home Screen" width="280"/>
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/b51087e9-ae36-447e-ae5d-044d6e3e0bc8" alt="Chat Screen" width="280"/>
+</p>
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Features
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- AI-powered study assistant
+- Upload PDFs for analysis
+- Generate comprehensive reviewers
+- Create flashcards automatically
+- Generate mock examinations
+- Ask questions about your study materials
+- Mobile-friendly interface

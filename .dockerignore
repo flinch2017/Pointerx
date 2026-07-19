@@ -1,0 +1,15 @@
+.expo
+.git
+.vscode
+node_modules
+assets
+app
+components
+constants
+hooks
+lib
+scripts
+.env
+.env.*
+*.log
+*.tsbuildinfo

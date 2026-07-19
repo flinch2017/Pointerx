@@ -5,25 +5,86 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+export const PastelBeigePalette = {
+  canvas: '#F8F0E5',
+  surface: '#FFF9F0',
+  surfaceMuted: '#F1E2D0',
+  border: '#E4CDB7',
+  text: '#3E3028',
+  mutedText: '#7E6B5D',
+  accent: '#9C6B4E',
+  accentSoft: '#EBCFB8',
+  sage: '#B8C7A3',
+  clay: '#DDAE93',
+  blue: '#B8CAD9',
+  gold: '#E4C47A',
+  success: '#7F9C67',
+  white: '#FFFFFF',
+  overlay: 'rgba(62, 48, 40, 0.22)',
+};
+
+export const MoonlighterPalette: typeof PastelBeigePalette = {
+  canvas: '#0F1218',
+  surface: '#171B23',
+  surfaceMuted: '#222A36',
+  border: '#344052',
+  text: '#F5F0E8',
+  mutedText: '#AEB8C9',
+  accent: '#2FB7AD',
+  accentSoft: '#123A42',
+  sage: '#8FA889',
+  clay: '#B4937E',
+  blue: '#87A1C8',
+  gold: '#D8C98C',
+  success: '#9DBF7C',
+  white: '#FFFFFF',
+  overlay: 'rgba(4, 7, 13, 0.64)',
+};
+
+export const AppPalette = PastelBeigePalette;
+
+export type AppPaletteName = 'pastel-beige' | 'moonlighter';
+export type AppPaletteColors = typeof AppPalette;
+
+export const AppThemes: Record<
+  AppPaletteName,
+  {
+    detail: string;
+    label: string;
+    navigation: 'light' | 'dark';
+    palette: AppPaletteColors;
+  }
+> = {
+  'pastel-beige': {
+    detail: 'Warm pastel beige',
+    label: 'Pastel beige',
+    navigation: 'light',
+    palette: PastelBeigePalette,
+  },
+  moonlighter: {
+    detail: 'Moonlight black night mode',
+    label: 'Moonlighter',
+    navigation: 'dark',
+    palette: MoonlighterPalette,
+  },
+};
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    text: PastelBeigePalette.text,
+    background: PastelBeigePalette.canvas,
+    tint: PastelBeigePalette.accent,
+    icon: PastelBeigePalette.mutedText,
+    tabIconDefault: PastelBeigePalette.mutedText,
+    tabIconSelected: PastelBeigePalette.accent,
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    text: MoonlighterPalette.text,
+    background: MoonlighterPalette.canvas,
+    tint: MoonlighterPalette.accent,
+    icon: MoonlighterPalette.mutedText,
+    tabIconDefault: MoonlighterPalette.mutedText,
+    tabIconSelected: MoonlighterPalette.accent,
   },
 };
 
